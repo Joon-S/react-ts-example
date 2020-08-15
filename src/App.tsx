@@ -12,5 +12,4 @@ const App = ({ color }: Page): JSX.Element => {
 		</>
 	);
 };
-
 export default App;
