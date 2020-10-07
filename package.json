@@ -28,6 +28,7 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
+    "react-hot-loader": "^4.12.21",
     "typescript": "^3.9.7",
     "webpack-dev-server": "^3.11.0"
   },
@@ -42,7 +43,7 @@
   "author": "",
   "license": "ISC",
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "npm run lint:fix"
+    "*.{js,jsx,ts,tsx}": "eslint . --fix"
   },
   "husky": {
     "hooks": {
