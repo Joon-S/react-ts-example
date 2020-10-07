@@ -41,5 +41,13 @@
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx}'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
